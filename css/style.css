@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    border: 0px;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,address{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@font-face{
+    font-family:opensans_exb;
+    src:url(../fonts/open-sans/OpenSans-ExtraBold.ttf);
+}
+@font-face{
+    font-family:opensans_reg;
+    src:url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+.bg{
+    background: #36d87a;
+}
+.bg1{
+    background: linear-gradient(to right, hsl(200,100%,50%), hsl(175,100%,50%));
+}
+
+/*-------------------------- Custom CSS --------------------------*/
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*-------------------------- Section ends --------------------------*/
+
+.nav-bg{
+     background: #126E82;
+ }
+ .navbar ul li a{
+     color: aliceblue;
+ }
+ .navbar ul li a:hover{
+     color: aqua;
+ }
+body{
+    background: #EBFFFA;
+}
+.form-text{
+    font-size: 1rem;
+}
+label, h2{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+
+
+

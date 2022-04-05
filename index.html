@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo's List</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">  <!--  font awesome icons  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    
+    <!-- =================== Navbar starts =================-->
+    <section class="navbar nav-bg mb-4">
+        <ul class="nav nav-pills ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+    </section>
+    <!-- =================== Navbar ends =================-->
+    <section class="todos-list">
+        <div class="container my-4">
+            <h2 class="text-center"> ToDo's List</h2>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Add an item to the list</div>
+            </div>
+
+            <div class="form-floating mt-4">
+                <label for="Description">Description</label>
+                <textarea class="form-control" placeholder="Write Description Here" id="Description" style="height: 100px"></textarea>
+            </div>
+            <button type="submit" id="add" class="btn btn-primary my-4">Add to List</button>
+            <button type="submit" id="clear" class="btn btn-primary my-4" onclick="clearStorage()">Clear List</button>
+          
+
+              <div id="items" class="my-4">
+                    <h2>Your Items</h2>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">SNo.</th>
+                            <th scope="col">Item Title</th>
+                            <th scope="col">Item Description</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Get Some Coffee</td>
+                            <td>You need Coffee to be more productive</td>
+                            <td><button class="btn btn-sm btn-primary">Delete</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+              </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =================== JS Files =================-->
+    <script src="js/jquery-3.6.0.slim.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/index.js"></script> 
+</body>
+</html>
